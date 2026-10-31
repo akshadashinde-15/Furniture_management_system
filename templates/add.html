@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Product</title>
+</head>
+
+<body>
+
+<h1 style="color: #6d4c41;">Furniture Shop</h1>
+
+<h2 style="color: #6d4c41;">Add Product</h2>
+
+<a href="/add">Add Product</a> |
+<a href="/display">Display</a> |
+<a href="/update">Update</a> |
+<a href="/delete">Delete</a>
+
+<hr>
+
+<form action="/add" method="POST">
+
+    Customer Name:
+    <input type="text" name="Customer_Name" required>
+    <br><br>
+
+    Product Name:
+    <select name="Product_Name" required>
+        <option value="">Select Product</option>
+        <option>Sofa</option>
+        <option>Bed</option>
+        <option>Dining Table</option>
+        <option>Chair</option>
+    </select>
+    <br><br>
+
+    Quantity:
+    <input type="number" name="Quantity" required>
+    <br><br>
+
+    Address:
+    <textarea name="Address" rows="4" required></textarea>
+    <br><br>
+
+    <button type="submit">Add Product</button>
+
+</form>
+
+</body>
+</html>
